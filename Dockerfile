@@ -2,10 +2,10 @@ FROM python:3.9.18
 #FROM nvcr.io/nvidia/pytorch:23.10-py3
 
 # WORKDIR /hack/app
-COPY requirements.txt ./requirements.txt
+#COPY requirements.txt ./requirements.txt
 
 RUN apt update && apt install -y --no-install-recommends libgl1
-RUN pip3 install -r requirements.txt
+#RUN pip3 install -r requirements.txt
 
 COPY . /app
 

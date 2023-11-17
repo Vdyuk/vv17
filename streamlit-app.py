@@ -96,7 +96,7 @@ def video_input(conf):
 			print(f"tffile.name {tffile.name}")
 
 			# не пишет у меня в папку /hack/saved_data/, разбираться нет смысла, надо на сервере пробовать
-			dst=os.path.join(os.getcwd(), f"{get_id_hash(10)}.mp4") # путь выходного видео
+			dst=os.path.join(os.getcwd(), f"dst_{get_id_hash(10)}.mp4") # путь выходного видео
 			print(f"путь dst {dst}")
 			
 			with st.spinner('Идет работа модели с видеофайлом...'):
